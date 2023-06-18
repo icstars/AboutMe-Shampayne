@@ -1,0 +1,71 @@
+.top-menu {
+  background-color: #610e6c;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.top-menu ul {
+  list-style-type: none;
+  margin: center;
+  padding: 0;
+  display: flex;
+}
+
+.top-menu li {
+  margin: 0 30px;
+}
+
+.top-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-menu a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-image: url(/pexels-anete-lusina-6331086.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.top-box {
+  background-color: #dda0dd80;
+  border: none;
+  padding: 2px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.top-box h1 {
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.top-box p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container1 {
+  max-width: 250px;
+  height: 900px;
+  margin: 0 auto;
+  background-color: #a63a928c;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+
+.container2 {
+  width: 50px;
+  height: 900px;
+  float: right;
+  background-color: #610e6c;
+  padding: 30%;
+}
