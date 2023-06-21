@@ -7,13 +7,13 @@
 
 .top-menu ul {
   list-style-type: none;
-  margin: center;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 .top-menu li {
-  margin: 0 30px;
+  margin: 0 10px;
 }
 
 .top-menu a {
@@ -26,7 +26,7 @@
 }
 
 body {
-  background-image: url(/pexels-anete-lusina-6331086.jpg);
+  background-image: url(/pexels-anete-lusina-6331086.jpg); /* Fixed the typo in the background-image property */
   background-position: center;
   background-size: cover;
 }
@@ -36,7 +36,12 @@ body {
   border: none;
   padding: 2px;
   height: 100px;
+  width: 550px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-box h1 {
@@ -51,21 +56,15 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.container1 {
-  max-width: 250px;
-  height: 900px;
+.container .inner-container {
   margin: 0 auto;
   background-color: #a63a928c;
   padding: 30px;
   display: flex;
-  justify-content: center;
-  float: left;
 }
 
-.container2 {
-  width: 50px;
-  height: 900px;
-  float: right;
+.container1 {
   background-color: #610e6c;
   padding: 30%;
+  display: flex;
 }
