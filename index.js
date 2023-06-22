@@ -48,3 +48,9 @@ let whatIsYourHobby = prompt("what is your hobby?");
 console.log(`${prompt1} is ${howOldAreYou}, and like to ${whatIsYourHobby}`);
 
 alert(`${prompt1} is ${howOldAreYou}, and likes to ${whatIsYourHobby}`);
+
+// nav bar
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});

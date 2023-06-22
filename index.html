@@ -3,61 +3,28 @@
   <head>
     <title>Shampayne Sifuentes</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0%;
-      }
-
-      .top-menu ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-      }
-
-      .top-menu ul li {
-        margin: 0 10px;
-      }
-
-      /* Flexbox for the inner containers */
-      .container .inner-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-    </style>
   </head>
-
   <body>
-    <div class="top-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    <video id="background-video" autoplay loop muted>
+      <source src="fantasy-magical-tree-moewalls.com.mp4" type="video/mp4" />
+    </video>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li id="search-container">
+            <input type="text" id="search-bar" placeholder="Search" />
+            <span id="username">Shampayne Sifuentes</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="container">
-      <div class="top-box">
-        <h1>Shampayne Sifuentes</h1>
-        <p>Welcome To My Site</p>
-      </div>
-
-      <div class="inner-container">
-        <p>
-          Here is a site I am actively building to better develop my skills as a
-          full stack developer.
-        </p>
-      </div>
-
-      <div class="container1">
-        <!-- Add more content here if needed -->
-      </div>
+    <div id="content">
+      <!--  page content here -->
     </div>
     <script src="/index.js"></script>
   </body>

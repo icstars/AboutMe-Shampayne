@@ -1,22 +1,90 @@
-.top-menu {
-  background-color: #610e6c;
-  height: 40px;
-  display: flex;
-  justify-content: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.top-menu ul {
+/* Styles for the header and navigation bar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #c40cb870;
+  z-index: 1;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.top-menu li {
+#navbar li {
   margin: 0 10px;
 }
 
-.top-menu a {
-  color: white;
+#navbar li a {
+  color: #fff;
   text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  font-family: fantasy;
+  align-content: end;
+}
+
+#navbar li a:hover {
+  background-color: #555;
+}
+
+/* New styles for alignment */
+#navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+#username {
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar {
+  padding: 5px;
+}
+
+#navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+#navbar-right input[type="search"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* Other styles */
+#content {
+  position: relative;
+  z-index: 2;
+  margin-top: 60px; /* Add margin to content to offset fixed header */
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 1440px;
 }
