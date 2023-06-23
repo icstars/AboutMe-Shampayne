@@ -197,14 +197,126 @@
 
 //////
 
-let randomNumber = Math.floor(Math.random() * 10) + 1;
-console.log(randomNumber);
+// let randomNumber = Math.floor(Math.random() * 10) + 1;
+// console.log(randomNumber);
 
-let prompt1 = parseInt(prompt("Guess a number between 1 and 10"));
-console.log(prompt1);
+// let prompt1 = parseInt(prompt("Guess a number between 1 and 10"));
+// console.log(prompt1);
 
-if (randomNumber === prompt1) {
-  console.log("Success!");
+// if (randomNumber === prompt1) {
+//   console.log("Success!");
+// } else {
+//   console.log("Wrong");
+// }
+
+/// loops /////
+
+// variables and data types
+let myName = "shamp";
+console.log(myName);
+console.log(typeof myName);
+
+//conditionals
+if (myName === "shamp") {
+  console.log(`hello ${myName}`);
 } else {
-  console.log("Wrong");
+  console.log(false);
 }
+
+// for
+for (let i = 0; i < 10; i++) {}
+//
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// arrays and methods
+let team = ["lucy", "collin", "mark", "cortez"];
+console.log(team);
+console.log(team.length);
+
+// push
+console.log(team.push("leyanna", "derrick"));
+console.log(team);
+
+// pop
+console.log(team.pop());
+console.log(team);
+
+// join
+console.log(team.join("A"));
+// "A" <-- instead of an "," you can use anything
+
+// slice returns a new array
+console.log(team);
+console.log(team.slice(0, 3));
+
+// Split
+let team1 = "john,mike, kierstin, lucy";
+console.log(team1);
+let team1Split = team1.split(",");
+console.log(team1Split);
+
+// looping thru an array
+console.log(team);
+console.log(team[3]);
+
+let roles = [
+  "tech Manager",
+  "techFello",
+  "placement manager",
+  "program manager",
+  "intern",
+];
+
+for (let i = 0; i < team.length; i++) {
+  console.log(i);
+  console.log(`hello my name is ${team[i]} and i am a ${roles[i]}`);
+}
+// hi my name is lucy and i am the tech manager
+
+console.log(team);
+for (let i = 0; i < team.lenghts; i++) {
+  console.log(i);
+}
+
+console.log(team);
+for (let i = 0; i < team.lenghts; i++) {
+  console.log(team[i]);
+}
+
+console.log(team);
+for (let i = 0; i < team.lenghts; i++) {
+  console.log(`hello ${team[i]}`);
+}
+
+////// challenge /////
+/// using only what we have learned thus far, working with prompts, at least
+/// enter your team's names and roles in your prompt(s)
+/// populate those values in an array[s]
+/// write a for loop that logs: "hello my name is <name> and i am the <roles>"
+/// you must get a log for every team member/
+
+let team22 = [];
+let roles3 = [];
+
+let team23 = prompt("Enter your team name (seperated by commas)");
+console.log(team23);
+
+let roles4 = prompt("Enter your Team Roles(seperated by commas)");
+console.log(roles4);
+
+let team23Array = team23.split(",");
+let roles4Array = roles4.split(",");
+
+for (let i = 0; i < team23Array.length; i++) {
+  let memberName = team23Array[i].trim();
+  let memberRole = roles4Array [i].trim()
+  console.log(`member ${i+1}: Name - ${memberName}, Role - ${memberRole}`)
+
+  team22.push(memberName)
+  roles3.push(memberRole)
+
+  console.log("Team Names", team22)
+  console.log("team Roles", roles3)
+  
