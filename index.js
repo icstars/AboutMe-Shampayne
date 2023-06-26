@@ -297,15 +297,153 @@
 /// write a for loop that logs: "hello my name is <name> and i am the <roles>"
 /// you must get a log for every team member/
 
-for (let i = 0; i < numRoles; i++) {
-  const name = prompt(`enter the name of your team members`);
-  const role = prompt(`enter the roles of your team members`);
-  teamName.push(name);
-  teamRoles.push(role);
-}
+// for (let i = 0; i < numRoles; i++) {
+//   const name = prompt(`enter the name of your team members`);
+//   const role = prompt(`enter the roles of your team members`);
+//   teamName.push(name);
+//   teamRoles.push(role);
+// }
 
-for (let i = 0; i < teamNames.length; i++) {
-  const name = teamNames[i];
-  const role = teamRoles[i];
-  console.log(`hello, my name is ${name} and i am the ${role}`);
+// for (let i = 0; i < teamNames.length; i++) {
+//   const name = teamNames[i];
+//   const role = teamRoles[i];
+//   console.log(`hello, my name is ${name} and i am the ${role}`);
+// }
+
+////// 6/26/23 overview //////
+
+// for loop...   (LET initializer  ;   condition  ;  iterator)
+
+// for (let initializer = 0;initializer < 5; initializer++) {
+//   console.log(`hello world`)
+// }
+
+// ////
+// const arr = [1,2,3,4]
+// console.log(arr[2]) // 3
+
+// for (let initializer = 0;initializer < 5; initializer++) {
+//   console.log(arr[initializer])
+
+// const arr = [1,2,3,4,5,6,7,8,3,2,1,3,2,1,2]
+
+//   for (let initializer = 0; initializer < arr.length; initializer++) {
+//     console.log(arr[initializer])
+//   }
+
+//ANCHOR - javascript functions
+
+//   //
+//   function thisIsTheFunctionName(name) {
+//     // replace console.log(name) with ....
+//     return name
+//   }
+
+//   // to activate
+// // TYPE THE FUNCTION NAME FOLLOWED BY PARENTHESIS
+// thisIsTheFunctionName(`collin`) // inside the parenthesis is the argument
+
+// // RETUEN STATEMENT
+
+// // const name =
+
+// ///
+
+// let array2 = [1, 2, 3, 4, 5, 6];
+// // let array3 = [1, 2, 3, 4, 5, 6];
+// // let array4 = [1, 2, 3, 4, 5, 6];
+// // let array5 = [1, 2, 3, 4, 5, 6];
+// // let array6 = [1, 2, 3, 4, 5, 6];
+// // let array7 = [1, 2, 3, 4, 5, 6];
+
+// // function iterateThroughArray(arr) {
+// //   for (let initializer = 0; initialezer < arr.length; initializer++) {
+// //     console.log(arr[initializer]);
+// //   }
+// // }
+// // iterateThroughArray(array3);
+
+// function sum(num1, num2) {
+//   console.log(num1 + num2);
+// }
+
+// sum(1, 3);
+
+// ///
+// function helloWorld() {
+//   console.log(`hello world`);
+// }
+// helloWorld();
+
+// // ///
+// // function pho(ingredient1, ingredient2) {
+// //   console.log(ingredient1 / ingredient2)
+// // }
+
+// // //
+// // const function1 = function() {
+
+// // }
+// // // arrow function
+// // const function2 = () => {
+
+// // }
+
+// ///// practice
+
+// let array10 = [1, 2, 3, 4, 5];
+
+// const function21 = function (arr) {
+//   for (let initializer = 0; initializer < arr.length; initializer++) {
+//     console.log(arr[initializer]);
+//   }
+// };
+
+// function21(array10);
+
+// // real world example
+
+// let users = ['collin', 'vince', 'haylee']
+
+// userinput = prompt('what is your username')
+
+// /////// assignment ///////
+// loop()
+
+function blockScope() {
+  let x = 0; // you CANT access in GLOAL SCOPE
+  console.log(x);
 }
+blockScope();
+
+// ////
+let array10 = [1, 2, 3, 4, 5];
+
+const function21 = function (arr) {
+  for (let initializer = 0; initializer < arr.length; initializer++) {
+    console.log(arr[initializer]);
+  }
+};
+
+function21(array10);
+
+///CHALLENGE
+// let team = ["Lucycan", "Collin", "Mark", "Cortez"]; ///this array needs to be in block scope not global scope
+///create a function that passes another name as an argument to the function parameter
+/// the function adds the name that you passed to the array
+/// return the array
+/// expected output: ["Lucycan", "Collin", "Mark", "Cortez", "Blanca"]
+
+function replaceTeamMember(item1) {
+  let team9 = ["Lucycan", "Collin", "Mark", "Cortez"];
+  console.log(item1);
+  console.log(team9.push(item1));
+
+  console.log(team9);
+  console.log;
+
+  for (let i = 0; i < team9.length; i++) {
+    console.log(team9[i]);
+  }
+}
+replaceTeamMember("Blanca");
