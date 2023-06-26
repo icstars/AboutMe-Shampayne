@@ -447,3 +447,23 @@ function replaceTeamMember(item1) {
   }
 }
 replaceTeamMember("Blanca");
+
+////// what derrick showed me /////
+
+function replaceTeamMember(item1) {
+  let team9 = ["Lucycan", "Collin", "Mark", "Cortez"];
+  console.log(item1);
+  console.log(team9.push(item1));
+  return team9;
+}
+
+let array = replaceTeamMember("Blanca");
+
+function loopTroughArray(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+loopTroughArray(array);
+loopTroughArray(replaceTeamMember("Shampayne"));
