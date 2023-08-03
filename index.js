@@ -343,54 +343,80 @@
 // // TYPE THE FUNCTION NAME FOLLOWED BY PARENTHESIS
 // thisIsTheFunctionName(`collin`) // inside the parenthesis is the argument
 
-// // RETUEN STATEMENT
+// // // RETUEN STATEMENT
 
-// // const name =
-
-// ///
-
-// let array2 = [1, 2, 3, 4, 5, 6];
-// // let array3 = [1, 2, 3, 4, 5, 6];
-// // let array4 = [1, 2, 3, 4, 5, 6];
-// // let array5 = [1, 2, 3, 4, 5, 6];
-// // let array6 = [1, 2, 3, 4, 5, 6];
-// // let array7 = [1, 2, 3, 4, 5, 6];
-
-// // function iterateThroughArray(arr) {
-// //   for (let initializer = 0; initialezer < arr.length; initializer++) {
-// //     console.log(arr[initializer]);
-// //   }
-// // }
-// // iterateThroughArray(array3);
-
-// function sum(num1, num2) {
-//   console.log(num1 + num2);
-// }
-
-// sum(1, 3);
-
-// ///
-// function helloWorld() {
-//   console.log(`hello world`);
-// }
-// helloWorld();
+// // // const name =
 
 // // ///
-// // function pho(ingredient1, ingredient2) {
-// //   console.log(ingredient1 / ingredient2)
+
+// // let array2 = [1, 2, 3, 4, 5, 6];
+// // // let array3 = [1, 2, 3, 4, 5, 6];
+// // // let array4 = [1, 2, 3, 4, 5, 6];
+// // // let array5 = [1, 2, 3, 4, 5, 6];
+// // // let array6 = [1, 2, 3, 4, 5, 6];
+// // // let array7 = [1, 2, 3, 4, 5, 6];
+
+// // // function iterateThroughArray(arr) {
+// // //   for (let initializer = 0; initialezer < arr.length; initializer++) {
+// // //     console.log(arr[initializer]);
+// // //   }
+// // // }
+// // // iterateThroughArray(array3);
+
+// // function sum(num1, num2) {
+// //   console.log(num1 + num2);
 // // }
 
-// // //
-// // const function1 = function() {
+// // sum(1, 3);
 
+// // ///
+// // function helloWorld() {
+// //   console.log(`hello world`);
 // // }
-// // // arrow function
-// // const function2 = () => {
+// // helloWorld();
 
-// // }
+// // // ///
+// // // function pho(ingredient1, ingredient2) {
+// // //   console.log(ingredient1 / ingredient2)
+// // // }
 
-// ///// practice
+// // // //
+// // // const function1 = function() {
 
+// // // }
+// // // // arrow function
+// // // const function2 = () => {
+
+// // // }
+
+// // ///// practice
+
+// // let array10 = [1, 2, 3, 4, 5];
+
+// // const function21 = function (arr) {
+// //   for (let initializer = 0; initializer < arr.length; initializer++) {
+// //     console.log(arr[initializer]);
+// //   }
+// // };
+
+// // function21(array10);
+
+// // // real world example
+
+// // let users = ['collin', 'vince', 'haylee']
+
+// // userinput = prompt('what is your username')
+
+// // /////// assignment ///////
+// // loop()
+
+// function blockScope() {
+//   let x = 0; // you CANT access in GLOAL SCOPE
+//   console.log(x);
+// }
+// blockScope();
+
+// // ////
 // let array10 = [1, 2, 3, 4, 5];
 
 // const function21 = function (arr) {
@@ -401,69 +427,66 @@
 
 // function21(array10);
 
-// // real world example
+// ///CHALLENGE
+// // let team = ["Lucycan", "Collin", "Mark", "Cortez"]; ///this array needs to be in block scope not global scope
+// ///create a function that passes another name as an argument to the function parameter
+// /// the function adds the name that you passed to the array
+// /// return the array
+// /// expected output: ["Lucycan", "Collin", "Mark", "Cortez", "Blanca"]
 
-// let users = ['collin', 'vince', 'haylee']
+// function replaceTeamMember(item1) {
+//   let team9 = ["Lucycan", "Collin", "Mark", "Cortez"];
+//   console.log(item1);
+//   console.log(team9.push(item1));
 
-// userinput = prompt('what is your username')
+//   console.log(team9);
 
-// /////// assignment ///////
-// loop()
+//   for (let i = 0; i < team9.length; i++) {
+//     console.log(team9[i]);
+//   }
+// }
+// replaceTeamMember("Blanca");
 
-function blockScope() {
-  let x = 0; // you CANT access in GLOAL SCOPE
-  console.log(x);
-}
-blockScope();
+// ////// what derrick showed me /////
 
-// ////
-let array10 = [1, 2, 3, 4, 5];
+// function replaceTeamMember(item1) {
+//   let team9 = ["Lucycan", "Collin", "Mark", "Cortez"];
+//   console.log(item1);
+//   console.log(team9.push(item1));
+//   return team9;
+// }
 
-const function21 = function (arr) {
-  for (let initializer = 0; initializer < arr.length; initializer++) {
-    console.log(arr[initializer]);
-  }
-};
+// let array = replaceTeamMember("Blanca");
 
-function21(array10);
+// function loopTroughArray(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+//   }
+// }
 
-///CHALLENGE
-// let team = ["Lucycan", "Collin", "Mark", "Cortez"]; ///this array needs to be in block scope not global scope
-///create a function that passes another name as an argument to the function parameter
-/// the function adds the name that you passed to the array
-/// return the array
-/// expected output: ["Lucycan", "Collin", "Mark", "Cortez", "Blanca"]
+// loopTroughArray(array);
+// loopTroughArray(replaceTeamMember("Shampayne"));
 
-function replaceTeamMember(item1) {
-  let team9 = ["Lucycan", "Collin", "Mark", "Cortez"];
-  console.log(item1);
-  console.log(team9.push(item1));
+///// DOM TREE /////// DOM MANIPULATION
 
-  console.log(team9);
-  console.log;
+console.log(document);
 
-  for (let i = 0; i < team9.length; i++) {
-    console.log(team9[i]);
-  }
-}
-replaceTeamMember("Blanca");
+const input = document.getElementById("calender");
 
-////// what derrick showed me /////
+console.log(input);
 
-function replaceTeamMember(item1) {
-  let team9 = ["Lucycan", "Collin", "Mark", "Cortez"];
-  console.log(item1);
-  console.log(team9.push(item1));
-  return team9;
-}
+const submit = document.getElementsByClassName("submit");
 
-let array = replaceTeamMember("Blanca");
+console.log(submit[0]);
 
-function loopTroughArray(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-  }
-}
+const h1 = document.querySelector("h1");
 
-loopTroughArray(array);
-loopTroughArray(replaceTeamMember("Shampayne"));
+console.log(h1);
+
+//// EVENT LISTENERS ////
+// click events, resize, change, etc.
+
+submit[0].addEventListener("click", function () {
+  console.log("hello world");
+  h1.textContent = `You Have Reserved For ${input.value}`;
+});
